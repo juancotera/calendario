@@ -1,0 +1,26 @@
+.container{
+  display: grid;
+  grid-template-columns: [inline-start] 1fr 1fr 1fr [inline-end];
+  grid-template-columns: repeat(3, 1fr); /*hace lo mismo que lo anterior*/
+  grid-template-columns: repeat(3, minmax(200px, 300px)); /*minmax otorga medidas minimas y maximas*/
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); /*minmax otorga medidas minimas y maximas*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*autofit hace que las columnas tomen todo el ancho*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*autofill crea columnas si hay espacio disponible y cunado la pantalla es mas pequeña al llegar su tamaño minimo envia abajo a la caja*/
+
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  block-size: 100vh;
+  max-inline-size: 1020px;
+  margin: auto;
+}
+
+.item{
+  border: 5px solid red;
+  /*contador css*/
+  counter-increment: item;
+}
+
+/*para el contador*/
+.item::before{
+  content: counter(item);
+}
