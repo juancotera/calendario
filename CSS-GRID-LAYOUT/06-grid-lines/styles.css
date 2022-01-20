@@ -1,0 +1,43 @@
+.container{
+  display: grid;
+  /*ancho de las columnas y la cantidad de columnas que tendra el grid*/
+  /*en el inicio y final y en cada intersección se cuenta como una linea*/
+  /*podemos nombrar estas lineas si deseamos*/
+  grid-template-columns: [inline-start] 200px [inline-2] 500px [inline-end];
+  /*alto de las filas*/
+  grid-template-rows: 100px 600px;
+}
+
+.item{
+  border: 5px solid red;
+  /*contador css*/
+  counter-increment: item;
+}
+
+/*para el contador*/
+.item::before{
+  content: counter(item);
+}
+
+.item:nth-of-type(1){
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  /*lo mismo, resumido*/
+  grid-column: 1 / inline-end;
+}
+
+/*activando los item del html*/
+.item:nth-of-type(4){
+  border-color: blue;
+  /* grid-column: 1 / 1; */
+  /*la celda 4 inicie en la linea 1, o el nombre de la linea*/
+  grid-column-start: 1;
+  grid-column-start: inline-start;
+  /* y termine en la ultima linea de las dos formas es igual */
+  grid-column-end: inline-end;
+  grid-column-end: -1;
+  /* que incie en la fila 1 y termine en la fila 6 */
+  grid-row-start: 1;
+  grid-row-end: 6;
+}

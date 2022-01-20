@@ -1,0 +1,18 @@
+.container{
+  display: grid;
+  /*ancho de las columnas y la cantidad de columnas que tendra el grid*/
+  grid-template-columns: 200px 100px 300px 200px 200px;
+  /*alto de las filas*/
+  grid-template-rows: 200px 100px;
+}
+
+.item{
+  border: 5px solid red;
+  /*contador css*/
+  counter-increment: item;
+}
+
+/*para el contador*/
+.item::before{
+  content: counter(item);
+}
