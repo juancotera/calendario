@@ -1,0 +1,44 @@
+.container{
+  display: grid;
+  /*autofill crea columnas si hay espacio disponible y cunado la pantalla es mas pequeña al llegar su tamaño minimo envia abajo a la caja*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  block-size: 100vh;
+  max-inline-size: 1020px;
+  margin: auto;
+  grid-auto-flow: row;
+  /* dense hace que los demas elementos se acomoden dentro del grid */
+  /* grid-auto-flow: column dense; */
+}
+
+.item{
+  border: 5px solid red;
+  /*contador css*/
+  counter-increment: item;
+
+  font-size: 3rem;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*para el contador*/
+.item::before{
+  content: counter(item);
+}
+
+.item:nth-child(4){
+  border-color: purple;
+  grid-row-end: span 2;
+}
+
+
+.item:nth-child(3){
+  border-color: green;
+  grid-row-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: span 2;
+}
