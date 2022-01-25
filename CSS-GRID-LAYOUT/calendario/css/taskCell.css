@@ -7,7 +7,7 @@
 
 /*cada 8 espacios aplicaremos el borde del final para cerar la ultima celda*/
 .taskCell:nth-child(8n){
-  border-inline-end: 1px solid currentColor;
+  /* border-inline-end: 1px solid currentColor; */
 }
 
 /*cuando hagamos click dentro de una celda sin tarea*/

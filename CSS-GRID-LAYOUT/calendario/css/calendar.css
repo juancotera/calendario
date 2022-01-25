@@ -1,5 +1,6 @@
 @import './task.css';
 @import './taskCell.css';
+@import './calendar-day.css';
 
 .calendar{
   color: var(--gray20);
