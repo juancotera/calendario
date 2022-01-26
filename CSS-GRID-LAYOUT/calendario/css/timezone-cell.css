@@ -1,0 +1,25 @@
+.timezoneCell{
+  font: var(--body3-regular);
+  position: sticky;
+  inset-block-start: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  padding-inline-end: 1rem;
+  /*para que nunca rompa en linea por el guión*/
+  white-space: nowrap;
+}
+
+/*dibujamos la pequeña linea*/
+.timezoneCell::before{
+  content: '';
+  inline-size: .5rem;
+  block-size: 1px;
+  background: var(--gray20);
+  /*posicionamos*/
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+}
