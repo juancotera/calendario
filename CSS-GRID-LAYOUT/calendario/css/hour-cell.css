@@ -1,0 +1,22 @@
+.hourCell{
+  font: var(--body3-regular);
+  /*alinear elementos aprovechando el grid*/
+  /* justify-self: end;
+  align-self: flex-end; */
+  place-self: start end; /*es lo mismo que el anterior*/
+  transform: translateY(-50%);
+  padding-inline-end: 1rem;
+  /*solo para posisionar el before*/
+  position: relative;
+}
+
+.hourCell::before{
+  content: '';
+  inline-size: .5rem;
+  block-size: 1px;
+  background: var(--gray20);
+
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-end: 50%;
+}
