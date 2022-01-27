@@ -14,6 +14,7 @@
 </head>
 <body>
   <div class="page">
+
     <header class="header">
       <div class="header-primary">
         <div class="header-logo">
@@ -48,18 +49,78 @@
         </a>
       </div>
 
-
-      <!-- <a class="button is-rounded is-shadowed" href="#"><i class="icon-plus"></i><span>button</span></a>
-      <a class="button is-compact" href="#"><i class="icon-plus"></i></a>
-      <button class="button">button</button>
-      <a class="button" href="#">button</a>
-      <a class="button is-primary" href="#">button</a>
-      <a class="button is-secondary" href="#">button</a> -->
-
     </header>
 
     <div class="sidebar">
+      <div class="miniCalendar" aria-label="Calendario de navegación">
+        <div class="miniCalendar-status">
+          <time class="miniCalendar-date" datetime="2022-01">Enero 2022</time>
+          <div class="miniCalendar-navigation">
+            <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
+              <i class="icon-chevronLeft" aria-hidden="true"></i>
+            </a>
+            <a class="button is-compact" href="#nextMonth" aria-label="Mes siguiente">
+              <i class="icon-chevronRight" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="miniCalendar-header">
+          <span class="miniCalendar-weekDay">D</span>
+          <span class="miniCalendar-weekDay">L</span>
+          <span class="miniCalendar-weekDay">M</span>
+          <span class="miniCalendar-weekDay">M</span>
+          <span class="miniCalendar-weekDay">J</span>
+          <span class="miniCalendar-weekDay">V</span>
+          <span class="miniCalendar-weekDay">S</span>
 
+        </div>
+        <div class="miniCalendar-month">
+          <div class="miniCalendar-monthDay is-inactive">26</div>
+          <div class="miniCalendar-monthDay is-inactive">27</div>
+          <div class="miniCalendar-monthDay is-inactive">28</div>
+          <div class="miniCalendar-monthDay is-inactive">29</div>
+          <div class="miniCalendar-monthDay is-inactive">30</div>
+          <div class="miniCalendar-monthDay is-inactive">31</div>
+
+          <div class="miniCalendar-monthDay">1</div>
+          <div class="miniCalendar-monthDay">2</div>
+          <div class="miniCalendar-monthDay">3</div>
+          <div class="miniCalendar-monthDay">4</div>
+          <div class="miniCalendar-monthDay">5</div>
+          <div class="miniCalendar-monthDay">6</div>
+          <div class="miniCalendar-monthDay">7</div>
+          <div class="miniCalendar-monthDay">8</div>
+          <div class="miniCalendar-monthDay">9</div>
+          <div class="miniCalendar-monthDay">10</div>
+          <div class="miniCalendar-monthDay">11</div>
+          <div class="miniCalendar-monthDay">12</div>
+          <div class="miniCalendar-monthDay">13</div>
+          <div class="miniCalendar-monthDay">14</div>
+          <div class="miniCalendar-monthDay">15</div>
+          <div class="miniCalendar-monthDay">16</div>
+          <div class="miniCalendar-monthDay">17</div>
+          <div class="miniCalendar-monthDay">18</div>
+          <div class="miniCalendar-monthDay">19</div>
+          <div class="miniCalendar-monthDay">20</div>
+          <div class="miniCalendar-monthDay">21</div>
+          <div class="miniCalendar-monthDay">22</div>
+          <div class="miniCalendar-monthDay">23</div>
+          <div class="miniCalendar-monthDay">24</div>
+          <div class="miniCalendar-monthDay is-selected">25</div>
+          <div class="miniCalendar-monthDay">26</div>
+          <div class="miniCalendar-monthDay">27</div>
+          <div class="miniCalendar-monthDay">28</div>
+          <div class="miniCalendar-monthDay">29</div>
+          <div class="miniCalendar-monthDay">30</div>
+          <div class="miniCalendar-monthDay">31</div>
+
+          <div class="miniCalendar-monthDay is-inactive">1</div>
+          <div class="miniCalendar-monthDay is-inactive">2</div>
+          <div class="miniCalendar-monthDay is-inactive">3</div>
+          <div class="miniCalendar-monthDay is-inactive">4</div>
+          <div class="miniCalendar-monthDay is-inactive">5</div>
+        </div>
+      </div>
     </div>
 
     <main class="calendar">
@@ -68,7 +129,7 @@
         <div class="timezoneCell">GMT-5</div>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Domingo 23 de Enero">
-            <time datetime="23-01-2022">
+            <time datetime="2022-01-23">
               <span>DOM</span><br>
               <span>23</span>
             </time>
@@ -76,7 +137,7 @@
         </h2>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Lunes 24 de Enero">
-            <time datetime="24-01-2022">
+            <time datetime="2022-01-24">
               <span>LUN</span><br>
               <span>24</span>
             </time>
@@ -84,7 +145,7 @@
         </h2>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Martes 25 de Enero">
-            <time datetime="25-01-2022">
+            <time datetime="2022-01-25">
               <span>MAR</span><br>
               <span>25</span>
             </time>
@@ -92,7 +153,7 @@
         </h2>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Miercoles 26 de enero">
-            <time datetime="26-01-2022">
+            <time datetime="2022-01-26">
               <span>MIE</span><br>
               <span>26</span>
             </time>
@@ -100,7 +161,7 @@
         </h2>
         <h2 class="calendarDay is-selected">
           <a href="./calendar-by.day.html" aria-label="Jueves 27 de Enero">
-            <time datetime="27-01-2022">
+            <time datetime="2022-01-27">
               <span>JUE</span><br>
               <span>27</span>
             </time>
@@ -108,7 +169,7 @@
         </h2>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Viernes 28 de Enero">
-            <time datetime="28-01-2022">
+            <time datetime="2022-01-28">
               <span>VIE</span><br>
               <span>28</span>
             </time>
@@ -116,7 +177,7 @@
         </h2>
         <h2 class="calendarDay">
           <a href="./calendar-by.day.html" aria-label="Sabado 29 de Enero">
-            <time datetime="29-01-2022">
+            <time datetime="2022-01-29">
               <span>SAB</span><br>
               <span>29</span>
             </time>
