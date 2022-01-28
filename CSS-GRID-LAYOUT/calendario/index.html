@@ -52,6 +52,12 @@
     </header>
 
     <div class="sidebar">
+
+      <button class="button is-rounded is-shadowed">
+        <i class="icon-plus" aria-hidden="true"></i>
+        <span>Crear</span>
+      </button>
+
       <div class="miniCalendar" aria-label="Calendario de navegación">
         <div class="miniCalendar-status">
           <time class="miniCalendar-date" datetime="2022-01">Enero 2022</time>
@@ -119,6 +125,41 @@
           <div class="miniCalendar-monthDay is-inactive">3</div>
           <div class="miniCalendar-monthDay is-inactive">4</div>
           <div class="miniCalendar-monthDay is-inactive">5</div>
+        </div>
+      </div>
+
+      <div class="search">
+        <form action="search" role="search" aria-label="Buscar personas">
+          <input type="search" placeholder="Buscar personas">
+        </form>
+      </div>
+
+      <div class="calendars">
+        <div class="calendars-header">
+          <p>Mis calendarios</p>
+          <button class="button is-compact">
+            <i class="icon-chevronUp"></i>
+          </button>
+        </div>
+        <div class="calendars-list">
+          <form action="">
+            <div>
+              <input type="checkbox" name="" id="juancotera">
+              <label for="juancotera">Juan Cotera</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Cumpleaños">
+              <label for="Cumpleaños">Cumpleaños</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Tareas">
+              <label for="Tareas">Tareas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="Recordatorios">
+              <label for="Recordatorios">Recordatorios</label>
+            </div>
+          </form>
         </div>
       </div>
     </div>

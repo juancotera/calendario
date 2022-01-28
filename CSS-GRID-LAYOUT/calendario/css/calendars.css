@@ -1,0 +1,61 @@
+.calendars{
+  /* border: 1px solid red; */
+  max-inline-size: 12.25rem;
+
+}
+
+.calendars-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--body1-medium);
+  color: var(--gray30);
+}
+
+.calendars-header p{
+  margin: 0;
+}
+
+
+.calendars-list{
+  font: var(--body1-regular);
+  color: var(--gray30);
+}
+
+.calendars-list form{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.calendars-list input[type=checkbox]{
+  display: none;
+}
+
+.calendars-list input[type=checkbox] + label{
+  cursor: pointer;
+}
+
+
+.calendars-list label:before{
+  content: '';
+  display: inline-block;
+  /* border: 1px solid green; */
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  background-image: url('../icons/Icon=check.svg');
+  background-repeat: no-repeat;
+  transform: translateY(.4rem);
+  padding-inline-end: .25rem;
+}
+
+.calendars-list input[type=checkbox]:checked + label:before{
+  content: '';
+  background-image: url('../icons/Icon=check-square.svg');
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+}
+
+
+

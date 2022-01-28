@@ -1,0 +1,28 @@
+.search{
+  position: relative;
+}
+
+.search input{
+  font: var(--body1-rgb(8, 8, 8)ular);
+  color: var(--gray50);
+  border: none;
+  max-inline-size: 12.25rem;
+  padding-inline-start: 1rem;
+  padding-block: .625rem;
+  background: var(--gray10);
+  border-radius: .25rem;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.search input::-webkit-input-placeholder{
+  padding-inline-start: 1.5rem;
+  color: var(--gray20);
+  font: var(--body1-regular);
+  background-image: url('../icons/Icon=users.svg');
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: left center .5rem;
+}
