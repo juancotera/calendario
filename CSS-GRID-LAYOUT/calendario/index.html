@@ -468,7 +468,37 @@
   </div>
   <dialog class="modal">
     <form action="">
-
+      <div class="input">
+        <input required name="title" type="text" placeholder="Añade un título">
+      </div>
+      <div class="input">
+        <input type="date" name="date" required>
+      </div>
+      <div class="input">
+        <input type="time" name="time-start" required>
+      </div>
+      <div class="input">
+        <input type="time" name="time-end" required>
+      </div>
+      <div class="input">
+        <input type="text" list="guests" name="guests" placeholder="Agregar invitados" required>
+        <datalist id="guests">
+          <option value="Leonidas"></option>
+          <option value="Carlos"></option>
+          <option value="Angel"></option>
+          <option value="Chritopher"></option>
+        </datalist>
+      </div>
+      <div class="input">
+        <input name="location" type="text" placeholder="Agregar ubicación">
+      </div>
+      <div class="input">
+        <input type="file" multiple>
+      </div>
+      <div class="input">
+        <textarea name="description" placeholder="Agregar descripción" id="" cols="30" rows="5"></textarea>
+      </div>
+      <input type="submit">
     </form>
     <div class="modal-actions">
       <button class="button">
