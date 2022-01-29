@@ -56,6 +56,10 @@
 
 .calendarDay.is-selected span:nth-of-type(2){
   background: var(--blue10);
-  color: var(--white)
+  color: var(--white);
 }
 
+.calendar-day .calendarDay.is-selected{
+  padding-inline-start: .5rem;
+  align-items: flex-start;
+}

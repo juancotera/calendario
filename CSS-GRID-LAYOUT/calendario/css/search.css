@@ -1,12 +1,12 @@
 .search{
+  max-inline-size: 12.25rem;
   position: relative;
 }
 
 .search input{
-  font: var(--body1-rgb(8, 8, 8)ular);
+  font: var(--body1-regular);
   color: var(--gray50);
   border: none;
-  max-inline-size: 12.25rem;
   padding-inline-start: 1rem;
   padding-block: .625rem;
   background: var(--gray10);

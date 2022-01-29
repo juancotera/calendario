@@ -32,7 +32,7 @@
 .input input:hover,
 .input textarea:focus,
 .input textarea:hover{
-  background-color: var(--gray10);
+  background-color: var(--gray20);
 }
 
 .input input:focus,
